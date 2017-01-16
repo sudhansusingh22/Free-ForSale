@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="PostEntity" representedClassName="PostEntity" syncable="YES">
+        <attribute name="p_created_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="p_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_updated_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="p_url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PostEntity" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

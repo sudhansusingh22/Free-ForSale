@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HUa-BX-ylI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Bid Popup View Controller-->
+        <scene sceneID="O9K-nN-fIm">
+            <objects>
+                <viewController id="HUa-BX-ylI" customClass="BidPopupViewController" customModule="TestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SvN-py-UI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="CXE-Ku-S9M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="owv-sh-6u0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBw-se-uAi">
+                                <rect key="frame" x="87" y="69" width="154" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XA7-rM-BX4"/>
+                                    <constraint firstAttribute="width" constant="154" id="r2y-QH-fdv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didClickPlaceBid:" destination="HUa-BX-ylI" eventType="touchUpInside" id="n1a-lK-qQZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Bid!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4H-h3-JnC" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="109" y="88" width="98" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VOU-sg-vp9"/>
+                                    <constraint firstAttribute="width" constant="98" id="oEd-SM-zZJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingProgress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingDuration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3803921569" green="0.65098039220000004" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mBw-se-uAi" firstAttribute="leading" secondItem="owv-sh-6u0" secondAttribute="leading" constant="87" id="3BG-jh-wTt"/>
+                            <constraint firstItem="mBw-se-uAi" firstAttribute="top" secondItem="SvN-py-UI6" secondAttribute="bottom" constant="49" id="ase-wN-bJB"/>
+                            <constraint firstItem="E4H-h3-JnC" firstAttribute="leading" secondItem="owv-sh-6u0" secondAttribute="leading" constant="109" id="iW4-Fz-8dB"/>
+                            <constraint firstItem="E4H-h3-JnC" firstAttribute="top" secondItem="SvN-py-UI6" secondAttribute="bottom" constant="68" id="jv2-xu-Ytr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="placeBidButton" destination="mBw-se-uAi" id="Fcs-z2-Csh"/>
+                        <outlet property="placeBidLabel" destination="E4H-h3-JnC" id="SgF-uM-MTn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvd-ft-vKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="514"/>
+        </scene>
+    </scenes>
+</document>
